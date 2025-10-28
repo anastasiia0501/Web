@@ -1,0 +1,288 @@
+  :root{
+    --coral: #ff6b6b; /* основний кораловий фон */
+    --coral-dark: #ff5a5a;
+    --white: #ffffff;
+    --muted: #6b6b6b;
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    body {
+      background: #f6f7fb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 0;
+      gap: 60px;
+    }
+    #pink-background {
+     background-color: var(--coral-dark);
+    }
+    /* 🔹 Рамка телефону */
+    .phone-frame {
+      position: relative;
+      width: 390px;               /* стандартна ширина телефону */
+      height: 844px;              /* висота телефону */
+      background: #fff;
+      border: 12px solid #000000;
+      border-radius: 40px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgb(0, 0, 0);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .illustration {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .illustration img {
+      width: 90%;
+      max-width: 280px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .border{
+      background-color: #ff6666;
+      color: #fff;
+      padding: 0px 30px 6px 30px;
+      border-radius: 8px;
+
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 25px 0 15px;
+      text-align: center;
+    }
+
+    p {
+      color: #555;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      max-width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 30px;
+      width: 100%;
+    }
+
+    button {
+      border: none;
+      background: none;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #skip {
+      color: #777;
+    }
+
+    #next {
+      background-color: #ff6666;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    #next:hover {
+      background-color: #ff4c4c;
+    }
+
+    .dots {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #eee;
+    }
+
+    .dot.active {
+      background: #ff6666;
+    }
+
+.logo-circle{
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    margin: 90px 0px 0px 0px;
+  }
+
+.logo-heart{
+    width:110px;
+    height:110px;
+    display:block;
+    fill: var(--coral-dark);
+    transform: rotate(45deg);
+}
+
+.title-hand {
+    font-family: "Protest Riot", cursive;
+    font-size: 56px;
+    letter-spacing: 2px;
+    color: #fff;
+    transform: translateY(4px); /* трохи вниз */
+    text-shadow: 0 7px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* Контейнер для кнопок LOGIN / REGISTER */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* відстань між кнопками */
+  margin-top: 25px;
+}
+
+/* Загальний стиль кнопок */
+.tab {
+  flex: 1;
+  max-width: 120px;
+  padding: 7px 40px 7px 40px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 900;
+  font-size: 70%;
+  text-align: center;
+  background-color: #ff6666; /* кораловий фон для неактивних */
+  color: white;              /* білий текст для неактивних */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Активна кнопка — навпаки: білий фон, кораловий текст */
+.tab.active {
+  flex: 1;
+  max-width: 120px;
+  padding: 7px 40px 7px 40px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 900;
+  font-size: 70%;
+  text-align: center;
+  background-color: white;
+  color: #ff6666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Ефект при наведенні */
+.tab:hover {
+  opacity: 0.6;
+}
+
+
+
+.form {
+    width:100%;
+    margin-top: 11px;
+    margin-bottom: 110px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:stretch;
+  }
+
+  .input-box{
+    background: var(--white);
+    color: #333;
+    padding:15px 24px;
+    border-radius:6px;
+    font-size:18px;
+    letter-spacing: 3px;
+    text-align:center;
+    box-shadow: 0 8px 14px rgba(0,0,0,0.06);
+    /* width: 80%;
+    max-width: 320px; */
+  }
+
+  .small-link {
+    color: rgba(255,255,255,0.95);
+    font-size:13px;
+    text-align:right;
+    margin-right:2px;
+    opacity:0.9;
+  }
+
+  .primary-btn{
+    background: var(--white);
+    color: var(--coral);
+    padding:18px 20px;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:700;
+    text-align:center;
+    letter-spacing:2px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.09);
+    border: none;
+    cursor: pointer;
+    /* width: 80%;
+    max-width: 320px; */
+  }
+
+  .tertiary {
+    color: rgba(255,255,255,0.95);
+    font-weight:600;
+    text-align:center;
+    font-size:14px;
+    margin-top:4px;
+    margin-bottom: 10px;
+  }
+
+
+
+.spacer { flex:1 }
+
+    /* 🔹 Адаптація для маленьких екранів */
+    @media (max-width: 450px) {
+      body {
+        padding: 20px;
+        gap: 40px;
+      }
+
+      .phone-frame {
+        width: 100%;
+        height: auto;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+
+      .illustration {
+        margin-top: 40px;
+      }
+    }
