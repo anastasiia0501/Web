@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dating App Onboarding — SPA</title>
+
+  <!-- Tailwind v3 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <!-- Шрифти -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kaushan+Script&family=Protest+Riot&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+  <!-- ===================== ONBOARDING 1 ===================== -->
+  <section id="screen-onb1" class="fade hidden">
+    <div class="mx-auto w-full max-w-[1600px] px-4 md:px-8 lg:px-12 min-h-[calc(100svh-56px)] flex flex-col py-6 md:py-10">
+      <div class="flex-1 grid md:grid-cols-2 items-start md:items-stretch gap-4 lg:gap-10">
+        <div class="w-full self-center md:translate-y-2">
+          <img class="w-full rounded-xl" src="https://elements-resized.envatousercontent.com/elements-cover-images/17170584-6276-4884-a568-c81f88a63ed1?w=2038&cf_fit=scale-down&q=85&format=auto&s=e203ea40c647f93037f7731ccd4c70987a317c0ff6e612eb9f8dc23baf9ee64c" alt="Meet new people">
+        </div>
+        <div class="text-center md:text-left md:h-full md:flex md:flex-col md:justify-center md:items-start">
+          <div class="inline-block bg-[#ff6b6b] text-white rounded-md px-4 py-[17px]">
+            <h1 class="text-2xl md:text-4xl font-bold tracking-wide">MEET NEW PEOPLE</h1>
+          </div>
+          <p class="mt-4 text-base md:text-lg leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia tellus quis est pharetra fermentum. Curabitur dapibus neque id lacus hendrerit rhoncus.
+          </p>
+        </div>
+      </div>
+      <div class="shrink-0 flex items-center justify-between w-full pt-3">
+        <button class="btn-ghost rounded-md bg-gray-100 text-gray-700
+         px-5 py-2.5 md:px-6 md:py-3
+         hover:bg-gray-200 active:bg-gray-300 transition" data-goto="login">SKIP</button>
+        <div class="flex items-center gap-2">
+          <span class="dot-active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="btn-primary" data-goto="onb2">NEXT</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ONBOARDING 2 ===================== -->
+  <section id="screen-onb2" class="fade hidden">
+    <div class="mx-auto w-full max-w-[1600px] px-4 md:px-8 lg:px-12 min-h-[calc(100svh-56px)] flex flex-col py-6 md:py-10">
+      <div class="flex-1 grid md:grid-cols-2 items-start md:items-stretch gap-4 lg:gap-10">
+        <div class="w-full self-center md:translate-y-2">
+          <img class="w-full rounded-xl" src="https://elements-resized.envatousercontent.com/elements-cover-images/bdfffbdc-fce8-472a-9250-b26f570ece3a?w=2038&cf_fit=scale-down&q=85&format=auto&s=b13c249aff40662e789f2f6a017189952fb44f55e39c0f9834845c936cb351fd" alt="Chat with ease">
+        </div>
+        <div class="text-center md:text-left md:h-full md:flex md:flex-col md:justify-center md:items-start">
+          <div class="inline-block bg-[#ff6b6b] text-white rounded-md px-4 py-[17px]">
+            <h1 class="text-2xl md:text-4xl font-bold tracking-wide">CHAT WITH EASE</h1>
+          </div>
+          <p class="mt-4 text-base md:text-lg leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia tellus quis est pharetra fermentum. Curabitur dapibus neque id lacus hendrerit rhoncus.
+          </p>
+        </div>
+      </div>
+      <div class="shrink-0 flex items-center justify-between w-full pt-3">
+        <button class="btn-ghost rounded-md bg-gray-100 text-gray-700
+         px-5 py-2.5 md:px-6 md:py-3
+         hover:bg-gray-200 active:bg-gray-300 transition" data-goto="login">SKIP</button>
+        <div class="flex items-center gap-2">
+          <span class="dot"></span>
+          <span class="dot-active animate-pulse"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="btn-primary" data-goto="onb3">NEXT</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ONBOARDING 3 ===================== -->
+  <section id="screen-onb3" class="fade hidden">
+    <div class="mx-auto w-full max-w-[1600px] px-4 md:px-8 lg:px-12 min-h-[calc(100svh-56px)] flex flex-col py-6 md:py-10">
+      <div class="flex-1 grid md:grid-cols-2 items-start md:items-stretch gap-4 lg:gap-10">
+        <div class="w-full self-center md:translate-y-2">
+          <img class="w-full rounded-xl" src="https://elements-resized.envatousercontent.com/elements-cover-images/349b3421-8090-4d66-b942-92ee3bed3d05?w=2038&cf_fit=scale-down&q=85&format=auto&s=a43e303b8f1ed41a022d39840ebe2c4d69991f362a8270b5bc3fd3cd330d2889" alt="Find your match">
+        </div>
+        <div class="text-center md:text-left md:h-full md:flex md:flex-col md:justify-center md:items-start">
+          <div class="inline-block bg-[#ff6b6b] text-white rounded-md px-4 py-[17px]">
+            <h1 class="text-2xl md:text-4xl font-bold tracking-wide">FIND YOUR MATCH</h1>
+          </div>
+          <p class="mt-4 text-base md:text-lg leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia tellus quis est pharetra fermentum. Curabitur dapibus neque id lacus hendrerit rhoncus.
+          </p>
+        </div>
+      </div>
+      <div class="shrink-0 flex items-center justify-between w-full pt-3">
+        <button class="btn-ghost rounded-md bg-gray-100 text-gray-700
+         px-5 py-2.5 md:px-6 md:py-3
+         hover:bg-gray-200 active:bg-gray-300 transition" data-goto="login">SKIP</button>
+        <div class="flex items-center gap-2">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot-active"></span>
+        </div>
+        <button class="btn-primary" data-goto="register">NEXT</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LOGIN (рожевий фон FULL-BLEED) ===================== -->
+  <section id="screen-login" class="fade hidden w-full bg-[#ff6b6b] text-white">
+    <div class="mx-auto w-full max-w-[1600px] px-6 md:px-12 lg:px-20 xl:px-28 min-h-[100svh] flex flex-col py-10 md:py-16">
+      <div class="flex items-center justify-center mt-2">
+        <div class="w-40 h-40 bg-white rounded-full shadow-md flex items-center justify-center">
+          <svg class="w-28 h-28 rotate-[20deg] origin-center" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path fill="currentColor" class="text-[#ff6b6b]" d="M12 21s-7-4.35-9.07-6.16C1.01 12.98 1.5 9.86 4.03 8.36 5.8 7.27 9.04 7.7 10.49 9.16L12 10.7l1.51-1.54c1.45-1.45 4.69-1.89 6.46-0.8 2.53 1.5 3.02 4.62 1.1 6.48C19 16.65 12 21 12 21z"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="text-center font-black text-white text-5xl tracking-wider mt-8 md:mt-10 mb-8 md:mb-10" style="font-family: 'Protest Riot', cursive;">FATED</div>
+
+      <div class="w-full max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6 mt-6 md:mt-8 flex gap-2">
+        <button class="tab tab-active flex-1 text-center whitespace-nowrap" data-goto="login">LOGIN</button>
+        <button class="tab flex-1 text-center whitespace-nowrap" data-goto="register">REGISTER</button>
+      </div>
+
+      <!-- FORM: акуратні відступи + плейсхолдери -->
+      <form class="w-full max-w-2xl lg:max-w-3xl mx-auto mt-8 px-4 md:px-6 space-y-4">
+        <input type="text" placeholder="user name"
+               class="w-full bg-white text-gray-900 placeholder-gray-400 px-6 py-4 rounded-md text-lg tracking-widest text-center shadow-md outline-none focus:ring-4 focus:ring-white/40 focus:shadow-lg transition" />
+        <input type="password" placeholder="password"
+               class="w-full bg-white text-gray-900 placeholder-gray-400 px-6 py-4 rounded-md text-lg tracking-widest text-center shadow-md outline-none focus:ring-4 focus:ring-white/40 focus:shadow-lg transition" />
+
+        <div class="flex justify-end">
+          <a href="#" class="text-white text-sm opacity-90 hover:opacity-100 hover:underline">FORGOT PASSWORD?</a>
+        </div>
+
+        <button type="button" class="btn-light" data-goto="onb1">LOGIN</button>
+
+        <div class="text-center text-white text-sm opacity-90 mt-3">
+          DON'T HAVE AN ACCOUNT?
+          <button data-goto="register" class="font-bold underline hover:no-underline">REGISTER</button>
+        </div>
+        
+      </form>
+
+      <div class="mt-auto"></div>
+    </div>
+  </section>
+
+  <!-- ===================== REGISTER (рожевий фон FULL-BLEED) ===================== -->
+  <section id="screen-register" class="fade hidden w-full bg-[#ff6b6b] text-white">
+    <div class="mx-auto w-full max-w-[1600px] px-6 md:px-12 lg:px-20 xl:px-28 min-h-[100svh] flex flex-col py-10 md:py-16">
+      <div class="flex items-center justify-center mt-2">
+        <div class="w-40 h-40 bg-white rounded-full shadow-md flex items-center justify-center">
+          <svg class="w-28 h-28 rotate-[20deg] origin-center" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path fill="currentColor" class="text-[#ff6b6b]" d="M12 21s-7-4.35-9.07-6.16C1.01 12.98 1.5 9.86 4.03 8.36 5.8 7.27 9.04 7.7 10.49 9.16L12 10.7l1.51-1.54c1.45-1.45 4.69-1.89 6.46-0.8 2.53 1.5 3.02 4.62 1.1 6.48C19 16.65 12 21 12 21z"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="text-center font-black text-white text-5xl tracking-wider mt-8 md:mt-10 mb-8 md:mb-10" style="font-family: 'Protest Riot', cursive;">FATED</div>
+
+      <div class="w-full max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6 mt-6 md:mt-8 flex gap-2">
+        <button class="tab flex-1 text-center whitespace-nowrap" data-goto="login">LOGIN</button>
+        <button class="tab tab-active flex-1 text-center whitespace-nowrap" data-goto="register">REGISTER</button>
+      </div>
+
+      <!-- FORM: акуратні відступи + плейсхолдери -->
+      <form class="w-full max-w-2xl lg:max-w-3xl mx-auto mt-8 px-4 md:px-6 space-y-4">
+        <input type="text" placeholder="user name"
+               class="w-full bg-white text-gray-900 placeholder-gray-400 px-6 py-4 rounded-md text-lg tracking-widest text-center shadow-md outline-none focus:ring-4 focus:ring-white/40 focus:shadow-lg transition" />
+        <input type="password" placeholder="password"
+               class="w-full bg-white text-gray-900 placeholder-gray-400 px-6 py-4 rounded-md text-lg tracking-widest text-center shadow-md outline-none focus:ring-4 focus:ring-white/40 focus:shadow-lg transition" />
+        <input type="email" placeholder="email"
+               class="w-full bg-white text-gray-900 placeholder-gray-400 px-6 py-4 rounded-md text-lg tracking-widest text-center shadow-md outline-none focus:ring-4 focus:ring-white/40 focus:shadow-lg transition" />
+
+        <div class="flex justify-end">
+          <a href="#" class="text-white text-sm opacity-90 hover:opacity-100 hover:underline">FORGOT PASSWORD?</a>
+        </div>
+
+        <button type="button" class="btn-light" data-goto="login">REGISTER</button>
+
+        <div class="text-center text-white text-sm opacity-90 mt-3">
+          ALREADY HAVE AN ACCOUNT?
+          <button data-goto="login" class="font-bold underline hover:no-underline">LOGIN</button>
+        </div>
+
+      </form>
+
+      <div class="mt-auto"></div>
+    </div>
+  </section>
+  <script src="./Routing.js"></script>
+</body>
+</html>
